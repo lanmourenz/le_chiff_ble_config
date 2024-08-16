@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 // makes it possible to hold backspace
@@ -16,49 +15,40 @@
     combos {
         compatible = "zmk,combos";
 
-        left_bkt {
-            bindings = <&kp LBKT>;
-            key-positions = <3 2>;
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+            timeout-ms = <120>;
         };
 
-        right_bkt {
-            bindings = <&kp RBKT>;
-            key-positions = <6 7>;
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <10 11>;
+            timeout-ms = <120>;
         };
 
-        left_par {
-            bindings = <&kp LPAR>;
+        Lshift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <20 21>;
+            timeout-ms = <120>;
+        };
+
+        ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <11 12>;
+            timeout-ms = <120>;
+        };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
             key-positions = <12 13>;
+            timeout-ms = <120>;
         };
 
-        right_par {
-            bindings = <&kp RPAR>;
-            key-positions = <16 17>;
-        };
-
-        left_prc {
-            bindings = <&kp LBRC>;
-            key-positions = <22 23>;
-        };
-
-        right_prc {
-            bindings = <&kp RBRC>;
-            key-positions = <27 26>;
-        };
-
-        blsh {
-            bindings = <&kp BSLH>;
-            key-positions = <4 5>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <14 15>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <19 18>;
+        Rshift {
+            bindings = <&kp RSHIFT>;
+            key-positions = <28 29>;
+            timeout-ms = <120>;
         };
     };
 
@@ -94,25 +84,27 @@
 &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6    &kp N7           &kp N8     &kp N9     &kp N0
 &trans  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT         &kp MINUS  &kp EQUAL  &kp SQT
 &trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans     &trans     &trans
-                &trans          &trans  &trans    &kp RIGHT_SHIFT             &mo 3
+                &trans          &trans  &trans    &kp RIGHT_SHIFT             &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         layer_2 {
             bindings = <
-&kp ESC       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans  &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN  &trans
-&kp CAPSLOCK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp AT_SIGN      &trans  &kp LEFT     &kp DOWN_ARROW  &kp RIGHT      &trans
-&kp DELETE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT          &trans  &trans       &trans          &trans         &trans
-                               &trans                            &trans           &trans  &trans                       &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans          &trans  &trans  &trans          &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
-&trans        &trans          &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
-                              &trans                      &trans        &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans          &trans  &trans  &trans          &trans
             >;
         };
     };
