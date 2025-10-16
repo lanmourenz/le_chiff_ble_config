@@ -1,11 +1,11 @@
 layout: {zmk_keyboard: le_chiff_ble}
 layers:
   Qwerty:
-  - $$mdi:brightness-5$$
-  - $$mdi:brightness-7$$
-  - BRIGHTNESS AUTO
-  - BRIGHTNESS MINIMUM
-  - BRIGHTNESS MAXIMUM
+  - Q
+  - W
+  - E
+  - R
+  - T
   - Y
   - U
   - I
@@ -31,11 +31,11 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - LGUI
-  - {t: '$$mdi:keyboard-space$$', h: '1'}
-  - $$mdi:brightness-5$$
-  - {t: '$$mdi:keyboard-space$$', h: '2'}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - '&MIMA'
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
   '1':
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -68,8 +68,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - $$mdi:brightness-5$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
@@ -106,7 +106,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '3':
   - {t: '$$mdi:transfer$$', type: trans}
