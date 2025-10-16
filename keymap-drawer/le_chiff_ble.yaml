@@ -33,7 +33,7 @@ layers:
   - {t: /, s: '?'}
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: '1'}
-  - '&MIMA'
+  - $$mdi:brightness-5$$
   - {t: '$$mdi:keyboard-space$$', h: '2'}
   - {t: '$$mdi:backspace$$', type: backspace}
   '1':
