@@ -1,11 +1,11 @@
 layout: {zmk_keyboard: le_chiff_ble}
 layers:
   Qwerty:
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - $$mdi:brightness-5$$
+  - $$mdi:brightness-7$$
+  - BRIGHTNESS AUTO
+  - BRIGHTNESS MINIMUM
+  - BRIGHTNESS MAXIMUM
   - Y
   - U
   - I
