@@ -400,8 +400,8 @@ path.combo {
     --color--key--border: var(--color--material--teal--100);
 }
 </style>
-<g transform="translate(0, 0)" class="layer-default">
-<text x="0" y="0" class="label" id="default">default</text>
+<g transform="translate(0, 0)" class="layer-Qwerty">
+<text x="0" y="0" class="label" id="Qwerty">Qwerty</text>
 <g transform="translate(0, 0)">
 <g transform="translate(64, 65) rotate(7.0)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -665,9 +665,7 @@ path.combo {
 </g>
 <g transform="translate(218, 124) rotate(7.0)" class="key keypos-12">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 62%">Ctl+</tspan><tspan x="0" dy="1.0em" style="font-size: 62%">$$mdi:a…</tspan>
-</text>
+<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:arrow-up-bold"/>
 </g>
 <g transform="translate(295, 154) rotate(7.0)" class="key trans keypos-13">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
